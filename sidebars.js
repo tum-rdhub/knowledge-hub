@@ -17,12 +17,12 @@ module.exports = {
           },
         items: [
           'link-to-ub-material', 
-          'discipline-specific',
+          'success-failure-stories',
         ],
       },
       {
         type: 'category',
-        label: 'Data Analysis',
+        label: 'Data Analysis & AI',
         collapsible: true,
         collapsed: false,
         link: {
@@ -31,35 +31,45 @@ module.exports = {
           },
         items: [
           //'data-analysis/index', // docs/data-analysis/index.md
-          'data-analysis/data-handling',
-          'data-analysis/data-visualization',
-          'data-analysis/link-to-julien',
+          // 'data-analysis/data-handling',
+          {
+            type: 'category',
+            label: 'Training Materials',
+            collapsed: false,
+            collapsible: true,
+            link: {
+              type: 'doc',
+              id: 'data-analysis/training-materials/training-materials',
+            },
+            items: [
+              'data-analysis/training-materials/python-for-data-analysis',
+              'data-analysis/training-materials/links',
+            ],
+          },
+          'data-analysis/best-practices',
+          'data-analysis/links',
+          'data-analysis/open-source-tools',
         ],
       },
       {
         type: 'category',
-        label: 'Additional Links',
+        label: 'Software Development',
         collapsible: true,
-        collapsed: true,
+        collapsed: false,
+        link: {
+            type: 'doc',
+            id: 'software-development/software-development',
+          },
         items: [
-          'link-to-eda-course',
-          'lmu-openscience-links',
+          //'data-analysis/index', // docs/data-analysis/index.md
+          'software-development/links',
+          'software-development/best-practices',
         ],
       },
       {
         type: 'doc',
-        id: 'insights-from-projects',
-        label: 'Insights from Projects',
-      },
-      {
-        type: 'doc',
-        id: 'tools-and-templates',
-        label: 'Tools & Templates',
-      },
-      {
-        type: 'doc',
         id: 'about',
-        label: 'About',
+        label: 'About & Contact',
       },
     ],
   };

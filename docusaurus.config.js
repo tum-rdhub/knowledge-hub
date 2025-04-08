@@ -24,7 +24,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'tum-rdhub', // Usually your GitHub org/user name.
   projectName: 'knowledge-hub', // Usually your repo name.
-  deploymentBranch: 'gh-pages', // recommended
+  deploymentBranch: 'main', // recommended
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
